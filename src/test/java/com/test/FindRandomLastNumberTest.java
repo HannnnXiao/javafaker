@@ -28,6 +28,17 @@ public class FindRandomLastNumberTest {
         }
     }
 
+    @Test
+	public void numberBetweenInputIntReturnError(){
+		for (int i = 1; i <= 100; i++) {
+			try {
+				boolean canFind = findLastNumber(i,0);
+			}catch (IllegalArgumentException e){
+
+			}
+		}
+	}
+
 	@Test
 	public void numberBetweenInputLong() {
 		for (long i = 1; i <= 100; i++) {
